@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar>
+        <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Lấy Quẻ</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="body ">
+    <ion-list no-lines>
+        <ion-item style="padding-left: 35%;" class="fix-backgroud"> {{pad2(time.getHours())}}:{{pad2(time.getMinutes())}}:{{pad2(time.getSeconds())}} ({{lunarHour.title}})</ion-item>
+        <ion-item class="fix-backgroud">
+            <ion-icon name="sunny" item-left></ion-icon> Ngày {{solar.solarDay}}, Tháng {{solar.solarMonth}}, Năm {{solar.solarYear}}</ion-item>
+        <ion-item class="fix-backgroud">
+            <ion-icon name="moon" item-left></ion-icon> Ngày {{lunar.lunarDay}}, Tháng {{lunar.lunarMonth}}, Năm {{lunar.lunarYear}}</ion-item>
+        <ion-item class="fix-backgroud">
+            <ion-icon name="brush" item-left></ion-icon>{{lunar.canChiLunarDay.canTitle}} {{lunar.canChiLunarDay.chiTitle}}, {{lunar.canChiLunarMonth.canTitle}}
+            {{lunar.canChiLunarMonth.chiTitle}}, {{lunar.canChiLunarYear.canTitle}} {{lunar.canChiLunarYear.chiTitle}}</ion-item>
+    </ion-list>
+    <ion-card class="fix-backgroud">
+        <ion-card-header class="fix-backgroud">
+            Header
+        </ion-card-header>
+        <ion-card-content>
+            The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="fix-backgroud">
+        <ion-card-header class="fix-backgroud">
+            Header
+        </ion-card-header>
+        <ion-card-content>
+            The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="fix-backgroud">
+        <ion-card-header class="fix-backgroud">
+            Header
+        </ion-card-header>
+        <ion-card-content>
+            The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+    </ion-card>
+    <button (click)="xemQue()"  fab fab-center>
+        <ion-icon name="md-hand" is-active="false"></ion-icon>
+    </button>
+</ion-content>
