@@ -1,9 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
-import {ListPage} from './pages/list/list';
-import {XemQuePage} from './pages/xem-que/xem-que';
 import {LayQuePage} from './pages/lay-que/lay-que';
 import {Database} from './providers/database/database';
 
@@ -26,8 +23,6 @@ class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage },
       { title: 'Lấy quẻ', component: LayQuePage }
     ];
   }

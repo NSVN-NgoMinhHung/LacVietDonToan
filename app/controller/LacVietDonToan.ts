@@ -1,13 +1,16 @@
+/*constructor parapeter: 
+lunarHourValue: number, lunarDay: number, lunarMonth: number, lunarYearChiValue: number
+*/
 export class LacVietDonToan {
     private lunarHourValue;
     private lunarDay;
     private lunarMonth;
-    private lunarYearValue;
-    constructor(lunarHourValue: any, lunarDay: any, lunarMonth: any, lunarYearValue: any) {
+    private lunarYearChiValue;
+    constructor(lunarHourValue: number, lunarDay: number, lunarMonth: number, lunarYearChiValue: number) {
         this.lunarHourValue = lunarHourValue;
         this.lunarDay = lunarDay;
         this.lunarMonth = lunarMonth;
-        this.lunarYearValue = lunarYearValue;
+        this.lunarYearChiValue = lunarYearChiValue;
     }
 
     getBatMon() {
@@ -15,6 +18,6 @@ export class LacVietDonToan {
     }
 
     getLucNham() {
-        return ((this.lunarHourValue + this.lunarDay + this.lunarMonth + this.lunarYearValue - 3) % 6);
+        return ((this.lunarHourValue + this.lunarDay + this.lunarMonth + this.lunarYearChiValue - 3) % 6);
     }
 }
